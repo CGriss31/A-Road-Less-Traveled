@@ -1,0 +1,30 @@
+
+
+<style>
+	#color_me_in {
+        background-color: <%= @color %>;
+        color: purple;
+        width: 250px;
+        height: 250px;
+    }
+
+</style>
+
+<div id="color_me_in">
+    <p>
+       
+    </p>
+</div>
+<!-- about.html.erb -->
+
+<!-- here's where all the stuff
+    we did previously is (CSS & div w/ id -->
+
+
+<%= form_tag index_path method :gets do %>
+
+    <p><%= text_field_tag :email, nil, placeholder: "What is your email?"%></p>
+    <p><%= text_field_tag :name, nil, placeholder: "What's your name?" %></p>
+    <p><%= submit_tag :Subscibe! %></p>
+
+<% end %>
